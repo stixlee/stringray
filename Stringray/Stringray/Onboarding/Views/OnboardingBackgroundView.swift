@@ -1,14 +1,13 @@
 //
-//  LaunchView.swift
+//  OnboardingBackgroundView.swift
 //  Stringray
 //
-//  Created by Michael Lee on 10/7/24.
+//  Created by Michael Lee on 10/8/24.
 //
 
 import SwiftUI
 
-struct LaunchView: View {
-    
+struct OnboardingBackgroundView: View {
     var body: some View {
         VStack {
             HStack {
@@ -22,12 +21,12 @@ struct LaunchView: View {
             }
             Spacer()
         }
-        .padding(.top, 118)
+        .padding(.top, 90)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.onboardingBackground.ignoresSafeArea())
     }
 }
 
-//#Preview {
-//    LaunchView()
-//}
+#Preview {
+    OnboardingBackgroundView()
+}
